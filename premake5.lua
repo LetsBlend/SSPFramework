@@ -1,4 +1,4 @@
-workspace "OceanSimulation"
+workspace "SSPFramework"
 	architecture "x64"
 	
 	configurations
@@ -10,16 +10,16 @@ workspace "OceanSimulation"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
-IncludeDir["glm"] = "OceanSimulation/vendor/glm"
-IncludeDir["spdlog"] = "OceanSimulation/vendor/spdlog"
-IncludeDir["ImGui"] = "OceanSimulation/vendor/imgui"
-IncludeDir["ImGuiBackends"] = "OceanSimulation/vendor/imgui/backends"
-IncludeDir["Assimp"] = "OceanSimulation/vendor/assimp/include"
+IncludeDir["glm"] = "SSPFramework/vendor/glm"
+IncludeDir["spdlog"] = "SSPFramework/vendor/spdlog"
+IncludeDir["ImGui"] = "SSPFramework/vendor/imgui"
+IncludeDir["ImGuiBackends"] = "SSPFramework/vendor/imgui/backends"
+IncludeDir["Assimp"] = "SSPFramework/vendor/assimp/include"
 
-include "OceanSimulation/vendor/imgui"
+include "SSPFramework/vendor/imgui"
 
-project "OceanSimulation"
-	location "OceanSimulation"
+project "SSPFramework"
+	location "SSPFramework"
 	kind "ConsoleApp"
 	language "C++"
 
